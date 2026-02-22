@@ -146,7 +146,7 @@ if (contactForm) {
 
         const payload = {
             username: "4For Site Contact",
-            avatar_url: "https://i.pinimg.com/736x/f3/34/31/f33431cdc786d238676cb617fc066ba9.jpghttps://i.pinimg.com/736x/f3/34/31/f33431cdc786d238676cb617fc066ba9.jpg",
+            avatar_url: "https://m.media-amazon.com/images/I/61p5Oimz-DL._AC_SL1500_.jpg",
             embeds: [{
                 title: "📨 Nova Mensagem de Contato",
                 color: 5793266,
