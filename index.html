@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4F Studio | Making the future</title>
+    <link rel="stylesheet" href="static/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="bg-wrapper">
+        <div class="aurora"></div>
+        <div class="grid-lines"></div>
+    </div>
+
+    <div class="mouse-cursor-gradient"></div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <a href="#home" class="nav-logo-link">
+                    <img src="assets/owners and developers/4f.png" alt="4F Logo" class="nav-logo-img">
+                </a>
+            </div>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Main</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#games">Projects</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://discord.gg/Br6fdbW4" class="btn btn-discord" target="_blank"><i class="fab fa-discord"></i> Discord</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-title-wrapper">
+                <img src="assets/owners and developers/4f.png" alt="4F Logo" class="hero-logo-img">
+                <h1 class="big-title">Studio's</h1>
+            </div>
+            <p class="hero-subtitle reveal">Building digital realities and the future of entertainment.</p>
+            <div class="hero-btns reveal">
+                <a href="#games" class="btn btn-primary">View Experiences</a>
+                <a href="#contact" class="btn btn-outline">Join Us</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section reveal">
+        <div class="stat-box">
+            <h2 class="counter" data-target="8.1">0</h2><span>M+</span>
+            <p>Total Visits</p>
+        </div>
+        <div class="stat-box">
+            <h2 class="counter" data-target="200">0</h2><span>k+</span>
+            <p>Members in Our Studio</p>
+        </div>
+        <div class="stat-box">
+            <h2 class="counter" data-target="1">0</h2><span>+</span>
+            <p>Games Released</p>
+        </div>  
+    </section>
+
+    <section class="partners-section reveal">
+        <div class="partners-header">
+            <p>We've worked with..</p>
+        </div>
+        
+        <div class="marquee-wrapper">
+            <div class="marquee-content">
+                <div class="marquee-group">
+                    <div class="partner-item">
+                        <img src="assets/partners/ix.png" alt="ix" title="ix">
+                        <span class="partner-name">Studios</span>
+                    </div>
+                    <div class="partner-item">
+                        <img src="assets/partners/dobig.png" alt="Do Big" title="Do Big">
+                        <span class="partner-name">Do Big</span>
+                    </div>
+                    <div class="partner-item">
+                        <img src="assets/partners/orbit.png" alt="Orbit" title="Orbit">
+                        <span class="partner-name"></span>
+                    </div>
+                    <div class="partner-item">
+                        <img src="assets/partners/indigo.png" alt="Indigo VC" title="Indigo VC">
+                        <span class="partner-name"></span>
+                    </div>
+                </div>
+                
+                <div class="marquee-group">
+                    <div class="partner-item">
+                        <img src="assets/partners/ix.png" alt="ix" title="ix">
+                        <span class="partner-name">Studios</span>
+                    </div>
+                    <div class="partner-item">
+                        <img src="assets/partners/dobig.png" alt="Do Big" title="Do Big">
+                        <span class="partner-name">Do Big</span>
+                    </div>
+                    <div class="partner-item">
+                        <img src="assets/partners/orbit.png" alt="Orbit" title="Orbit">
+                        <span class="partner-name"></span>
+                    </div>
+                    <div class="partner-item">
+                        <img src="assets/partners/indigo.png" alt="Indigo VC" title="Indigo VC">
+                        <span class="partner-name"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section reveal">
+        <div class="container split-layout">
+            <div class="about-text">
+                <div class="section-label">WHO WE ARE</div>
+                <h2>Molding the Impossible</h2>
+                <p>The 4F Studio was born from a passion for creating immersive worlds. We combine cutting-edge technology with deep narratives to deliver experiences that stay in memory.</p>
+                <p>Our team is made up of visionaries, artists, and engineers dedicated to pushing the boundaries of what's possible in game development.</p>
+            </div>
+            <div class="about-image">
+                <div class="slideshow-container">
+                    <video src="assets/arts/map.mp4" class="slide active" autoplay muted loop playsinline></video>
+                    <img src="assets/arts/concept.png" class="slide" alt="Bear Concept Art">
+                    <img src="assets/arts/newgame.png" class="slide" alt="New Game Art">
+                    <div class="slide-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="games" class="games-section reveal">
+        <div class="section-header">
+            <h2>OUR EXPERIENCES</h2>
+            <p>Explore the worlds we build.</p>
+        </div>
+       
+        <div class="games-grid">
+            <div class="game-card" data-universe-id="7872170209">
+                <div class="card-image">
+                    <img src="" alt="Anime Celestial X" class="game-thumb">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-info">
+                    <h3 class="game-name">Anime Celestial X</h3>
+                    <p>✨ Welcome to Anime Celestial X!</p>
+                    <div class="ccu-badge">
+                        <div class="live-indicator"></div>
+                        <span>Peak CCU: <strong>22K</strong></span>
+                    </div>
+                    <div class="ccu-badge">
+                        <div class="live-indicator"></div>
+                        <span>Visitas: <strong class="visit-count">...</strong></span>
+                    </div>
+                </div>
+                <div class="card-action">
+                    <a href="https://www.roblox.com/games/110483372589393" class="btn-card" target="_blank">Play Now</a>
+                </div>
+            </div>
+
+            <div class="game-card tilt-element glass-card">
+                <div class="card-glare"></div>
+                <div class="card-image">
+                    <img src="assets/arts/anime-steal.png" alt="Anime Steal" class="game-thumb">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-info">
+                    <h3 class="game-name">Anime Steal</h3>
+                    <p>✨ ✨ Anime Steal é um jogo rápido no estilo anime brainrot onde você rouba personagens de outros jogadores!!!</p>
+                    
+                    <div class="ccu-badge">
+                        <div class="live-indicator"></div>
+                        <span>Peak CCU: <strong>15K</strong></span>
+                    </div>
+                    <div class="ccu-badge">
+                        <div class="live-indicator"></div>
+                        <span>Visitas: <strong>2.5M+</strong></span>
+                    </div>
+                </div>
+                <div class="card-action magnetic-wrap">
+                    <a href="https://roblox.com/seu-link-aqui" class="btn-card magnetic-item" target="_blank">Play Now</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="team" class="team-section reveal">
+        <div class="section-header">
+            <h2>OUR TEAM</h2>
+            <p>Meet the minds behind the magic.</p>
+        </div>
+        <div class="team-container">
+            <div class="team-scroll-wrapper">
+                <div class="team-member-card">
+                    <div class="member-photo">
+                        <div class="photo-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <img src="assets/owners and developers/brin.png" alt="Brincha" onerror="this.style.display='none'">
+                        </div>
+                    </div>
+                    <div class="member-details">
+                        <h3 class="member-name">Brincha</h3>
+                        <p class="member-role">Owner</p>
+                    </div>
+                </div>  
+                <div class="team-member-card">
+                    <div class="member-photo">
+                        <div class="photo-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <img src="assets/owners and developers/peix.png" alt="Peixonas" onerror="this.style.display='none'">
+                        </div>
+                    </div>
+                    <div class="member-details">
+                        <h3 class="member-name">Peixonas</h3>
+                        <p class="member-role">Owner</p>
+                    </div>
+                </div>
+                <div class="team-member-card">
+                    <div class="member-photo">
+                        <div class="photo-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <img src="assets/owners and developers/dkz.png" alt="Dkz" onerror="this.style.display='none'">
+                        </div>
+                    </div>
+                    <div class="member-details">
+                        <h3 class="member-name">Dkz</h3>
+                        <p class="member-role">Owner</p>
+                    </div>
+                </div>
+                <div class="team-member-card">
+                    <div class="member-photo">
+                        <div class="photo-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <img src="assets/owners and developers/tlipe.png" alt="O_Kolt" onerror="this.style.display='none'">
+                        </div>
+                    </div>
+                    <div class="member-details">
+                        <h3 class="member-name">O_Kolt</h3>
+                        <p class="member-role">Programmer</p>
+                    </div>
+                </div>
+                <div class="team-member-card">
+                    <div class="member-photo">
+                        <div class="photo-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <img src="assets/owners and developers/slowzy.png" alt="Slowzy" onerror="this.style.display='none'">
+                        </div>
+                    </div>
+                    <div class="member-details">
+                        <h3 class="member-name">Slowzy</h3>
+                        <p class="member-role">Animator</p>
+                    </div>
+                </div>
+                <div class="team-member-card">
+                    <div class="member-photo">
+                        <div class="photo-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <img src="assets/owners and developers/alebao.png" alt="Alebao" onerror="this.style.display='none'">
+                        </div>
+                    </div>
+                    <div class="member-details">
+                        <h3 class="member-name">Alebão</h3>
+                        <p class="member-role">VFX Maker</p>
+                    </div>
+                </div>
+                <div class="team-member-card">
+                    <div class="member-photo">
+                        <div class="photo-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <img src="assets/owners and developers/Portuga.gif" alt="Portuga" onerror="this.style.display='none'">
+                        </div>
+                    </div>
+                    <div class="member-details">
+                        <h3 class="member-name">Portuga</h3>
+                        <p class="member-role">Builder/Modelador</p>
+                    </div>
+                </div>
+                <div class="team-member-card">
+                    <div class="member-photo">
+                        <div class="photo-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <img src="assets/owners and developers/damu.png" alt="Damu" onerror="this.style.display='none'">
+                        </div>
+                    </div>
+                    <div class="member-details">
+                        <h3 class="member-name">Damu</h3>
+                        <p class="member-role">SFX Maker</p>
+                    </div>
+                </div>
+                <div class="team-member-card">
+                    <div class="member-photo">
+                        <div class="photo-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <img src="assets/owners and developers/Batata.png" alt="Batata" onerror="this.style.display='none'">
+                        </div>
+                    </div>
+                    <div class="member-details">
+                        <h3 class="member-name">Batata</h3>
+                        <p class="member-role">Modelador</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section reveal">
+        <div class="container contact-split">
+            <div class="contact-info">
+                <h2>Let's create something extraordinary together.</h2>
+                <p class="contact-desc">Share your vision and our team will help transform abstract ideas into playable realities.</p>
+                <ul class="features-list">
+                    <li>
+                        <i class="fas fa-code feature-icon"></i>
+                        <div>
+                            <strong>High-End Development</strong>
+                            <span>Robust engineering for millions of players.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-handshake feature-icon"></i>
+                        <div>
+                            <strong>Brand Partnerships</strong>
+                            <span>Authentic integrations that engage the community.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-users feature-icon"></i>
+                        <div>
+                            <strong>Community Focus</strong>
+                            <span>We create games where players feel at home.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="contact-form-wrapper">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <input type="text" name="name" required placeholder=" ">
+                            <label>Full Name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="company" placeholder=" ">
+                            <label>Company (Optional)</label>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="email" required placeholder=" ">
+                        <label>Commercial E-mail</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="message" required placeholder=" "></textarea>
+                        <label>How can we help?</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-submit" id="formButton">
+                        SEND MESSAGE <i class="fas fa-arrow-right"></i>
+                    </button>
+
+                    <div id="formResult" class="form-result"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">4F Studio's</div>
+            <p>&copy; 2026 All rights reserved.</p>
+            <p>&copy; The Dog</p>
+        </div>
+    </footer>
+
+    <script src="script/main.js"></script>
+</body>
+</html>
