@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4F Studio | Making the future</title>
+    <link rel="icon" type="image/png" href="assets/owners and developers/4f.png">
     <link rel="stylesheet" href="static/style.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,27 +22,14 @@
 
     <div class="mouse-cursor-gradient"></div>
 
-    <header>
-        <nav class="navbar">
-            <div class="logo-container">
-                <a href="#home" class="nav-logo-link">
-                    <img src="assets/owners and developers/4f.png" alt="4F Logo" class="nav-logo-img">
-                </a>
-            </div>
-
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-
-            <ul class="nav-links">
-                <li><a href="#home">Main</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#games">Projects</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="https://discord.gg/Br6fdbW4" class="btn btn-discord" target="_blank"><i class="fab fa-discord"></i> Discord</a></li>
+    <header class="header-minimal">
+        <nav class="navbar-minimal">
+            <ul class="nav-links-minimal">
+                <li><a href="#home"><span class="dot"></span> Main</a></li>
+                <li><a href="#media"><span class="dot"></span> About Us</a></li>
+                <li><a href="#games"><span class="dot"></span> Projects</a></li>
+                <li><a href="#team"><span class="dot"></span> Team</a></li>
+                <li><a href="#contact"><span class="dot"></span> Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -75,70 +63,46 @@
         </div>  
     </section>
 
-    <section class="partners-section reveal">
-        <div class="partners-header">
-            <p>We've worked with..</p>
+    <section id="media" class="media-section reveal">
+        <div class="media-header">
+            <div class="section-label line-label">CINEMATICS</div>
+            <h2>OFICIAL FILES</h2>
         </div>
         
-        <div class="marquee-wrapper">
-            <div class="marquee-content">
-                <div class="marquee-group">
-                    <div class="partner-item">
-                        <img src="assets/partners/ix.png" alt="ix" title="ix">
-                        <span class="partner-name">Studios</span>
+        <div class="carousel-container">
+            <button class="carousel-btn prev-btn"><i class="fas fa-arrow-left"></i></button>
+            
+            <div class="carousel-track-wrapper">
+                <div class="carousel-track">
+                    
+                    <div class="carousel-card">
+                        <img src="assets/arts/concept.png" alt="Anime Crash" class="carousel-img">
+                        <div class="carousel-info">
+                            <h3>Anime Crash</h3>
+                            <span class="status">SOON</span>
+                        </div>
                     </div>
-                    <div class="partner-item">
-                        <img src="assets/partners/dobig.png" alt="Do Big" title="Do Big">
-                        <span class="partner-name">Do Big</span>
+                    
+                    <div class="carousel-card">
+                        <img src="assets/arts/newgame.png" alt="Anime Crash Quests" class="carousel-img">
+                        <div class="carousel-info">
+                            <h3>Anime Crash</h3>
+                            <span class="status">SOON</span>
+                        </div>
                     </div>
-                    <div class="partner-item">
-                        <img src="assets/partners/orbit.png" alt="Orbit" title="Orbit">
-                        <span class="partner-name"></span>
+                    
+                    <div class="carousel-card">
+                        <video src="assets/arts/map.mp4" class="carousel-img" autoplay muted loop playsinline></video>
+                        <div class="carousel-info">
+                            <h3>Anime Crash</h3>
+                            <span class="status">SOON</span>
+                        </div>
                     </div>
-                    <div class="partner-item">
-                        <img src="assets/partners/indigo.png" alt="Indigo VC" title="Indigo VC">
-                        <span class="partner-name"></span>
-                    </div>
-                </div>
-                
-                <div class="marquee-group">
-                    <div class="partner-item">
-                        <img src="assets/partners/ix.png" alt="ix" title="ix">
-                        <span class="partner-name">Studios</span>
-                    </div>
-                    <div class="partner-item">
-                        <img src="assets/partners/dobig.png" alt="Do Big" title="Do Big">
-                        <span class="partner-name">Do Big</span>
-                    </div>
-                    <div class="partner-item">
-                        <img src="assets/partners/orbit.png" alt="Orbit" title="Orbit">
-                        <span class="partner-name"></span>
-                    </div>
-                    <div class="partner-item">
-                        <img src="assets/partners/indigo.png" alt="Indigo VC" title="Indigo VC">
-                        <span class="partner-name"></span>
-                    </div>
+    
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="about" class="about-section reveal">
-        <div class="container split-layout">
-            <div class="about-text">
-                <div class="section-label">WHO WE ARE</div>
-                <h2>Molding the Impossible</h2>
-                <p>The 4F Studio was born from a passion for creating immersive worlds. We combine cutting-edge technology with deep narratives to deliver experiences that stay in memory.</p>
-                <p>Our team is made up of visionaries, artists, and engineers dedicated to pushing the boundaries of what's possible in game development.</p>
-            </div>
-            <div class="about-image">
-                <div class="slideshow-container">
-                    <video src="assets/arts/map.mp4" class="slide active" autoplay muted loop playsinline></video>
-                    <img src="assets/arts/concept.png" class="slide" alt="Bear Concept Art">
-                    <img src="assets/arts/newgame.png" class="slide" alt="New Game Art">
-                    <div class="slide-overlay"></div>
-                </div>
-            </div>
+            
+            <button class="carousel-btn next-btn"><i class="fas fa-arrow-right"></i></button>
         </div>
     </section>
 
@@ -170,6 +134,31 @@
                     <a href="https://www.roblox.com/games/110483372589393" class="btn-card" target="_blank">Play Now</a>
                 </div>
             </div>
+
+            <div class="game-card tilt-element glass-card">
+                <div class="card-glare"></div>
+                <div class="card-image">
+                    <img src="assets/game/anime-steal.png" alt="Anime Steal" class="game-thumb">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-info">
+                    <h3 class="game-name">Anime Steal</h3>
+                    <p>✨ ✨ Anime Steal é um jogo rápido no estilo anime brainrot onde você rouba personagens de outros jogadores!!!</p>
+                    
+                    <div class="ccu-badge">
+                        <div class="live-indicator"></div>
+                        <span>Peak CCU: <strong>15K</strong></span>
+                    </div>
+                    <div class="ccu-badge">
+                        <div class="live-indicator"></div>
+                        <span>Visitas: <strong>2.5M+</strong></span>
+                    </div>
+                </div>
+                <div class="card-action magnetic-wrap">
+                    <a href="https://www.roblox.com/pt/games/93914065085396/Anime-Steal#!/about" class="btn-card magnetic-item" target="_blank">Play Now</a>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -271,7 +260,7 @@
                 <div class="team-member-card">
                     <div class="member-photo">
                         <div class="photo-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                            <img src="assets/owners and developers/bat.png" alt="Batata" onerror="this.style.display='none'">
+                            <img src="assets/owners and developers/Batata.png" alt="Batata" onerror="this.style.display='none'">
                         </div>
                     </div>
                     <div class="member-details">
