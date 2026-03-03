@@ -872,10 +872,10 @@ body {
 footer { 
     text-align: center; 
     padding: 50px; 
-    color: #444; 
+    color: var(--text-main); 
     border-top: 1px solid #111; 
-    font-size: 0.9rem; 
-    background: #050505; 
+    font-size: 1rem; 
+    background: rgba(red, green, blue, alpha);
 }
 
 .form-result { 
