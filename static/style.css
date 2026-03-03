@@ -121,7 +121,7 @@ body {
 .nav-links-minimal .dot {
     width: 6px;
     height: 6px;
-    background-color: #f1c40f;
+    background-color: var(--accent);
     border-radius: 50%;
     display: inline-block;
     box-shadow: 0 0 8px rgba(241, 196, 15, 0.6);
