@@ -26,7 +26,6 @@
         <nav class="navbar-minimal">
             <ul class="nav-links-minimal">
                 <li><a href="#home"><span class="dot"></span> Main</a></li>
-                <li><a href="#media"><span class="dot"></span> About Us</a></li>
                 <li><a href="#games"><span class="dot"></span> Projects</a></li>
                 <li><a href="#team"><span class="dot"></span> Team</a></li>
                 <li><a href="#contact"><span class="dot"></span> Contact</a></li>
@@ -38,7 +37,7 @@
         <div class="hero-content">
             <div class="hero-title-wrapper">
                 <img src="assets/owners and developers/4f.png" alt="4F Logo" class="hero-logo-img">
-                <h1 class="big-title">Studio's</h1>
+                <h1 class="hero-main-title">Studio's</h1>
             </div>
             <p class="hero-subtitle reveal">Building digital realities and the future of entertainment.</p>
             <div class="hero-btns reveal">
@@ -61,73 +60,6 @@
             <h2 class="counter" data-target="1">0</h2><span>+</span>
             <p>Games Released</p>
         </div>  
-    </section>
-
-    <section id="media" class="media-section reveal">
-        <div class="media-header">
-            <div class="section-label line-label">CINEMATICS</div>
-            <h2>OFICIAL FILES</h2>
-        </div>
-        
-        <div class="carousel-container">
-            <button class="carousel-btn prev-btn"><i class="fas fa-arrow-left"></i></button>
-            
-            <div class="carousel-track-wrapper">
-                <div class="carousel-track">
-                    
-                    <div class="carousel-card">
-                        <img src="assets/arts/adada.png" alt="Anime Travelers" class="carousel-img">
-                        <div class="carousel-info">
-                            <h3>Anime Travelers</h3>
-                            <span class="status">SOON</span>
-                        </div>
-                    </div>
-                    
-                    <div class="carousel-card">
-                        <img src="assets/arts/concept.png" alt="Anime Travelers" class="carousel-img">
-                        <div class="carousel-info">
-                            <h3>Anime Travelers</h3>
-                            <span class="status">SOON</span>
-                        </div>
-                    </div>
-                    
-                    <div class="carousel-card">
-                        <video src="assets/arts/map.mp4" class="carousel-img" autoplay muted loop playsinline></video>
-                        <div class="carousel-info">
-                            <h3>Anime Travelers</h3>
-                            <span class="status">SOON</span>
-                        </div>
-                    </div>
-
-                    <div class="carousel-card">
-                        <img src="assets/arts/braINHOTE.png" alt="Dive The Brainrot" class="carousel-img">
-                        <div class="carousel-info">
-                            <h3>Dive The Brainrot</h3>
-                            <span class="status">SOON</span>
-                        </div>
-                    </div>
-
-                    <div class="carousel-card">
-                        <video src="assets/arts/dive_2.mp4" class="carousel-img" autoplay muted loop playsinline></video>
-                        <div class="carousel-info">
-                            <h3>Dive The Brainrot</h3>
-                            <span class="status">SOON</span>
-                        </div>
-                    </div>
-
-                    <div class="carousel-card">
-                        <video src="assets/arts/Sneak jogo de brainrot estilo dive.mp4" class="carousel-img" autoplay muted loop playsinline></video>
-                        <div class="carousel-info">
-                            <h3>Dive The Brainrot</h3>
-                            <span class="status">SOON</span>
-                        </div>
-                    </div>
-    
-                </div>
-            </div>
-            
-            <button class="carousel-btn next-btn"><i class="fas fa-arrow-right"></i></button>
-        </div>
     </section>
 
     <section id="games" class="games-section reveal">
@@ -155,31 +87,35 @@
                     </div>
                 </div>
                 <div class="card-action">
-                    <a href="https://www.roblox.com/games/110483372589393" class="btn-card" target="_blank">Play Now</a>
+                    <a href="https://www.roblox.com/games/110483372589393" class="btn-card btn-play-now" target="_blank">Play Now</a>
                 </div>
             </div>
 
-            <div class="game-card glass-card">
-                <div class="card-glare"></div>
+            <div class="game-card">
                 <div class="card-image">
                     <img src="assets/arts/adada.png" alt="Anime Travelers" class="game-thumb">
                     <div class="card-overlay"></div>
                 </div>
                 <div class="card-info">
                     <h3 class="game-name">Anime Travelers</h3>
-                    <p>⚔️Get ready to explore new worlds. The ultimate anime RPG is being forged.</p>
+                    <p>⚔️ Get ready to explore new worlds. The ultimate anime RPG is being forged.</p>
                     
-                    <div class="ccu-badge" style="border-color: rgba(241, 196, 15, 0.3);">
-                        <span style="color: var(--accent);"><i class="fas fa-hammer"></i> In Development</span>
+                    <div class="progress-container">
+                        <div class="progress-header">
+                            <span style="color: var(--accent); font-weight: 600; font-size: 0.85rem;"><i class="fas fa-hammer"></i> In Development</span>
+                            <span class="progress-text">75%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" style="width: 75%;"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="card-action magnetic-wrap">
-                    <a href="#games" class="btn-card magnetic-item" style="pointer-events: none; opacity: 0.5;">Coming Soon</a>
+                <div class="card-action">
+                    <a href="#games" class="btn-card btn-disabled">Coming Soon</a>
                 </div>
             </div>
 
-            <div class="game-card glass-card">
-                <div class="card-glare"></div>
+            <div class="game-card">
                 <div class="card-image">
                     <img src="assets/arts/braINHOTE.png" alt="Dive The Brainrot" class="game-thumb">
                     <div class="card-overlay"></div>
@@ -188,12 +124,18 @@
                     <h3 class="game-name">Dive The Brainrot</h3>
                     <p>🧠 Dive into absolute madness. A frenetic experience that will melt your mind.</p>
                     
-                    <div class="ccu-badge" style="border-color: rgba(241, 196, 15, 0.3);">
-                        <span style="color: var(--accent);"><i class="fas fa-hammer"></i> In Development</span>
+                    <div class="progress-container">
+                        <div class="progress-header">
+                            <span style="color: var(--accent); font-weight: 600; font-size: 0.85rem;"><i class="fas fa-hammer"></i> In Development</span>
+                            <span class="progress-text">40%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" style="width: 40%;"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="card-action magnetic-wrap">
-                    <a href="#games" class="btn-card magnetic-item" style="pointer-events: none; opacity: 0.5;">Coming Soon</a>
+                <div class="card-action">
+                    <a href="#games" class="btn-card btn-disabled">Coming Soon</a>
                 </div>
             </div>
 
@@ -208,7 +150,7 @@
         <div class="team-container">
             
             <div class="team-tier owners-tier">
-                <div class="section-label line-label" style="margin-bottom: 40px;">BOARD OF DIRECTORS</div>
+                <h3 class="tier-title">BOARD OF DIRECTORS</h3>
                 <div class="owners-grid">
                     <div class="team-member-card owner-card">
                         <div class="member-photo">
@@ -247,8 +189,9 @@
             </div>
     
             <div class="team-tier dev-tier" style="margin-top: 100px;">
-                <div class="section-label line-label" style="margin-bottom: 40px;">DEVELOPMENT TEAM</div>
+                <h3 class="tier-title">DEVELOPMENT TEAM</h3>
                 <div class="team-scroll-wrapper">
+                    
                     <div class="team-member-card">
                         <div class="member-photo">
                             <div class="photo-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
@@ -371,7 +314,6 @@
                         </div>
                     </div>
 
-                    </div>
                 </div>
             </div>
 
@@ -450,7 +392,6 @@
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="#home">Main</a></li>
-                    <li><a href="#media">Cinematics</a></li>
                     <li><a href="#games">Experiences</a></li>
                     <li><a href="#team">Team</a></li>
                 </ul>

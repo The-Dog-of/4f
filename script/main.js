@@ -42,6 +42,7 @@ const apiURL = "/api/send";
 
             cards.forEach(card => {
                 const uid = parseInt(card.dataset.universeId);
+                if (isNaN(uid)) return;
                 const game = gameData.data.find(g => g.id === uid);
                 const thumb = thumbData && thumbData.data ? thumbData.data.find(t => t.universeId === uid) : null;
 
@@ -107,44 +108,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
     if(statsSection) statsObserver.observe(statsSection);
-
-    const teamScrollWrapper = document.querySelector('.team-scroll-wrapper');
-    if(teamScrollWrapper) {
-        teamScrollWrapper.addEventListener('wheel', (e) => {
-            if (e.deltaY !== 0) teamScrollWrapper.scrollLeft += e.deltaY;
-        }, { passive: true });
-    }
-
-    const track = document.querySelector('.carousel-track');
-    const cards = document.querySelectorAll('.carousel-card');
-    const prevBtn = document.querySelector('.prev-btn');
-    const nextBtn = document.querySelector('.next-btn');
-    let currentIndex = 0;
-
-    if (track && prevBtn && nextBtn && cards.length > 0) {
-        const updateCarousel = () => {
-            const cardWidth = cards[0].offsetWidth;
-            const gap = 20; 
-            const moveAmount = (cardWidth + gap) * currentIndex;
-            track.style.transform = `translateX(-${moveAmount}px)`;
-        };
-
-        nextBtn.addEventListener('click', () => {
-            if (currentIndex < cards.length - 1) {
-                currentIndex++;
-                updateCarousel();
-            }
-        });
-
-        prevBtn.addEventListener('click', () => {
-            if (currentIndex > 0) {
-                currentIndex--;
-                updateCarousel();
-            }
-        });
-
-        window.addEventListener('resize', updateCarousel);
-    }
 });
 
 const contactForm = document.getElementById('contactForm');
