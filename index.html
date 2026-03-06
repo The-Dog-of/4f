@@ -7,8 +7,8 @@
     
     <meta property="og:title" content="4F Studio's | Building digital realities">
     <meta property="og:description" content="For fans, by fans. We create games where players feel at home. Join our universes and play the future.">
-    <meta property="og:image" content="https://i.imgur.com/AfFp7pu.png">
-    <meta property="og:url" content="https://seusite.com">
+    <meta property="og:image" content="https://4f-lake.vercel.app/assets/owners and developers/4f.png">
+    <meta property="og:url" content="https://4f-lake.vercel.app/">
     <meta name="theme-color" content="#5865F2">
     <meta property="og:type" content="website">
 
@@ -42,7 +42,9 @@
     </aside>
 
     <section id="home" class="hero">
-        <div class="hero-bg-gif"></div>
+        <video class="hero-bg-video" autoplay loop muted playsinline>
+            <source src="assets/arts/fundo.mp4" type="video/mp4">
+        </video>
         <div class="hero-content">
             <div class="hero-title-wrapper">
                 <img src="assets/owners and developers/4f.png" alt="4F Logo" class="hero-logo-img">
@@ -96,6 +98,11 @@
                 <div class="card-action">
                     <a href="https://www.roblox.com/games/110483372589393" class="btn-card btn-play-now" target="_blank">Play Now</a>
                 </div>
+                <div class="game-tooltip" id="modalAnimeCelestialX">
+                    <span class="btn-fechar-previa">&times;</span>
+                    <h2>Anime Celestial X</h2>
+                    <p>O universo supremo dos animes em Roblox está aqui! Encarne seu personagem favorito e quebre limites.</p>
+                </div>
             </div>
 
             <div class="game-card" id="cardAnimeTravelers">
@@ -119,6 +126,11 @@
                 </div>
                 <div class="card-action">
                     <a href="#games" class="btn-card btn-disabled">Coming Soon</a>
+                </div>
+                <div class="game-tooltip" id="modalAnimeTravelers">
+                    <span class="btn-fechar-previa">&times;</span>
+                    <h2>Anime Travelers</h2>
+                    <p>O RPG mais ambicioso. Viaje entre as eras e mundos mais icônicos dos animes.</p>
                 </div>
             </div>
 
@@ -144,33 +156,11 @@
                 <div class="card-action">
                     <a href="#games" class="btn-card btn-disabled">Coming Soon</a>
                 </div>
-            </div>
-
-        </div>
-
-        <div class="previa-modal" id="modalAnimeCelestialX">
-            <div class="previa-content">
-                <span class="btn-fechar-previa">&times;</span>
-                <h2>Anime Celestial X</h2>
-                <p>O universo supremo dos animes em Roblox está aqui! No Celestial X, você encarna seu personagem favorito, explora mundos vastos e luta em combates que quebram limites. A verdadeira experiência Celestial espera por você.</p>
-            </div>
-        </div>
-
-        <div class="previa-modal" id="modalAnimeTravelers">
-            <div class="previa-content">
-                <span class="btn-fechar-previa">&times;</span>
-                <h2>Anime Travelers</h2>
-                <p>O RPG de anime mais ambicioso que estamos criando. Viaje entre as eras e os mundos dos animes mais icônicos, formando sua própria lenda. Uma jornada inesquecível está sendo forjada.</p>
-                <img src="assets/arts/adada.png" alt="Anime Travelers">
-            </div>
-        </div>
-
-        <div class="previa-modal" id="modalDiveTheBrainrot">
-            <div class="previa-content">
-                <span class="btn-fechar-previa">&times;</span>
-                <h2>Dive The Brainrot</h2>
-                <p>Cansado da realidade? Mergulhe de cabeça na loucura absoluta. Uma experiência frenética onde o caos e a insanidade são as regras. Prepare-se para que seu cérebro derreta.</p>
-                <img src="assets/arts/braINHOTE.png" alt="Dive The Brainrot">
+                <div class="game-tooltip" id="modalDiveTheBrainrot">
+                    <span class="btn-fechar-previa">&times;</span>
+                    <h2>Dive The Brainrot</h2>
+                    <p>Mergulhe na loucura absoluta. Uma experiência frenética onde o caos é a única regra.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -181,13 +171,12 @@
             <p>Meet the minds behind the magic.</p>
         </div>
         <div class="team-container">
-            
             <div class="team-tier owners-tier">
                 <h3 class="tier-title board-label">BOARD OF DIRECTORS</h3>
                 <div class="owners-grid">
                     <div class="team-member-card owner-card">
                         <div class="member-photo">
-                            <div class="photo-placeholder" style="background: linear-gradient(135deg, #FFD700 0%, #FF8C00 100%);">
+                            <div class="photo-placeholder">
                                 <img src="assets/owners and developers/brin.png" alt="Brincha" onerror="this.style.display='none'">
                             </div>
                         </div>
@@ -198,7 +187,7 @@
                     </div>  
                     <div class="team-member-card owner-card">
                         <div class="member-photo">
-                            <div class="photo-placeholder" style="background: linear-gradient(135deg, #FFD700 0%, #FF8C00 100%);">
+                            <div class="photo-placeholder">
                                 <img src="assets/owners and developers/peix.png" alt="Peixonas" onerror="this.style.display='none'">
                             </div>
                         </div>
@@ -209,7 +198,7 @@
                     </div>
                     <div class="team-member-card owner-card">
                         <div class="member-photo">
-                            <div class="photo-placeholder" style="background: linear-gradient(135deg, #FFD700 0%, #FF8C00 100%);">
+                            <div class="photo-placeholder">
                                 <img src="assets/owners and developers/dkz.png" alt="Dkz" onerror="this.style.display='none'">
                             </div>
                         </div>
@@ -220,7 +209,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 

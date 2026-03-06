@@ -138,18 +138,15 @@ body {
     background: transparent; 
 }
 
-.hero-bg-gif {
+.hero-bg-video {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    max-width: 900px;
-    height: 600px;
-    background-image: url('../assets/arts/fuando.gif'); 
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    max-width: 1920px;
+    height: 1080px;
+    object-fit: contain;
     opacity: 0.4; 
     z-index: 0;
     pointer-events: none;
@@ -162,34 +159,29 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 35px;
+    gap: 1px;
     width: 100%;
 }
 
 .hero-title-wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 100%;
-    margin: 0;
 }
 
 .hero-logo-img {
-    width: clamp(200px, 40vw, 450px);
+    width: clamp(450px, 40vw, 750px);
     height: auto;
     object-fit: contain;
-    display: block;
     margin: 0 auto;
+    transform: translateX(65px);
 }
 
 .hero-btns { 
     display: flex; 
     justify-content: center; 
-    align-items: center;
     gap: 15px; 
     flex-wrap: wrap;
-    margin: 0;
-    width: 100%;
 }
 
 .btn { 
@@ -308,12 +300,13 @@ body {
     flex-direction: column;
     backdrop-filter: blur(10px);
     cursor: pointer;
+    position: relative; 
 }
 
 .game-card:hover { 
     transform: translateY(-15px); 
     border-color: var(--accent); 
-    box-shadow: 0 20px 50px rgba(88, 101, 242, 0.2); 
+    box-shadow: 0 30px 50px rgba(88, 101, 242, 0.2); 
 }
 
 .card-image { 
@@ -456,83 +449,75 @@ body {
     opacity: 0.5;
 }
 
-.previa-modal {
-    display: none; 
-    position: fixed;
-    z-index: 2000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    pointer-events: none;
-    align-items: center;
-    justify-content: center;
+.game-tooltip {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    background: rgba(15, 15, 18, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(88, 101, 242, 0.4);
+    border-radius: 12px 12px 12px 2px;
+    padding: 25px 30px;
+    width: 85%;
+    z-index: 100;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
     opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.previa-modal.show {
-    display: flex;
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.previa-content {
-    background: rgba(20, 20, 22, 0.95);
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(88, 101, 242, 0.3);
-    border-radius: 12px;
-    padding: 25px;
-    max-width: 350px;
-    width: 90%;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
     text-align: left;
-    position: relative;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(88, 101, 242, 0.1);
-    transform: translateY(20px) scale(0.95);
-    transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-.previa-modal.show .previa-content {
-    transform: translateY(0) scale(1);
+.game-card.show-tooltip .game-tooltip {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translate(-50%, -50%);
+}
+
+.game-tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 20px;
+    width: 15px;
+    height: 15px;
+    background: rgba(15, 15, 18, 0.98);
+    border-bottom: 1px solid rgba(88, 101, 242, 0.4);
+    border-right: 1px solid rgba(88, 101, 242, 0.4);
+    transform: rotate(45deg);
+}
+
+.game-tooltip h2 {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 700;
+    padding-right: 20px;
+}
+
+.game-tooltip p {
+    font-size: 0.95rem;
+    color: #a0a0a0;
+    line-height: 1.5;
+    margin: 0;
 }
 
 .btn-fechar-previa {
     position: absolute;
     top: 15px;
     right: 15px;
-    color: var(--text-muted);
-    font-size: 20px;
+    color: #666;
+    font-size: 24px;
     line-height: 1;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.2s ease;
 }
 
 .btn-fechar-previa:hover {
-    color: var(--text-main);
-}
-
-.previa-content h2 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    color: white;
-    font-size: 1.2rem;
-    padding-right: 20px;
-}
-
-.previa-content p {
-    color: var(--text-muted);
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin-bottom: 15px;
-}
-
-.previa-content img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 10px;
-    border: 1px solid rgba(255,255,255,0.05);
+    color: #ffffff;
 }
 
 .team-section { 
@@ -589,26 +574,26 @@ body {
     display: flex; 
     flex-direction: column; 
     transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4); 
     backdrop-filter: blur(10px); 
 }
 
 .team-member-card:hover { 
-    transform: translateY(-10px) scale(1.02);
+    transform: translateY(-15px) scale(1.02);
     border-color: var(--accent);
-    box-shadow: 0 20px 50px rgba(88, 101, 242, 0.2); 
+    box-shadow: 0 25px 60px rgba(88, 101, 242, 0.2); 
 }
 
 .owner-card {
-    min-width: 300px;
-    max-width: 300px;
+    min-width: 320px;
+    max-width: 320px;
     border: 2px solid transparent;
 }
 
 .owner-card:hover {
-    transform: translateY(-10px) scale(1.05);
+    transform: translateY(-15px) scale(1.05);
     border-color: var(--accent);
-    box-shadow: 0 20px 50px rgba(88, 101, 242, 0.3);
+    box-shadow: 0 25px 60px rgba(88, 101, 242, 0.3);
 }
 
 .owner-card .member-photo {
@@ -1001,7 +986,7 @@ body {
     } 
     
     .hero-logo-img { 
-        width: clamp(200px, 60vw, 350px); 
+        width: clamp(200px, 60vw, 450px); 
     }
 
     .hero-btns { 
