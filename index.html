@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4F Studio | Making the future</title>
+    
+    <meta property="og:title" content="4F Studio's | Building digital realities">
+    <meta property="og:description" content="For fans, by fans. We create games where players feel at home. Join our universes and play the future.">
+    <meta property="og:image" content="https://i.imgur.com/AfFp7pu.png">
+    <meta property="og:url" content="https://seusite.com">
+    <meta name="theme-color" content="#5865F2">
+    <meta property="og:type" content="website">
+
     <link rel="icon" type="image/png" href="assets/owners and developers/4f.png">
     <link rel="stylesheet" href="static/style.css">
     
@@ -22,24 +30,23 @@
 
     <div class="mouse-cursor-gradient"></div>
 
-    <header class="header-minimal">
-        <nav class="navbar-minimal">
-            <ul class="nav-links-minimal">
+    <aside class="sidebar-nav">
+        <nav class="navbar-lateral">
+            <ul class="nav-links-lateral">
                 <li><a href="#home"><span class="dot"></span> Main</a></li>
                 <li><a href="#games"><span class="dot"></span> Projects</a></li>
                 <li><a href="#team"><span class="dot"></span> Team</a></li>
                 <li><a href="#contact"><span class="dot"></span> Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </aside>
 
     <section id="home" class="hero">
+        <div class="hero-bg-gif"></div>
         <div class="hero-content">
             <div class="hero-title-wrapper">
                 <img src="assets/owners and developers/4f.png" alt="4F Logo" class="hero-logo-img">
-                <h1 class="hero-main-title">Studio's</h1>
             </div>
-            <p class="hero-subtitle reveal">Building digital realities and the future of entertainment.</p>
             <div class="hero-btns reveal">
                 <a href="#games" class="btn btn-primary">View Experiences</a>
                 <a href="#contact" class="btn btn-outline">Join Us</a>
@@ -69,7 +76,7 @@
         </div>
        
         <div class="games-grid">
-            <div class="game-card" data-universe-id="7872170209">
+            <div class="game-card" data-universe-id="7872170209" id="cardAnimeCelestialX">
                 <div class="card-image">
                     <img src="" alt="Anime Celestial X" class="game-thumb">
                     <div class="card-overlay"></div>
@@ -91,7 +98,7 @@
                 </div>
             </div>
 
-            <div class="game-card">
+            <div class="game-card" id="cardAnimeTravelers">
                 <div class="card-image">
                     <img src="assets/arts/adada.png" alt="Anime Travelers" class="game-thumb">
                     <div class="card-overlay"></div>
@@ -103,10 +110,10 @@
                     <div class="progress-container">
                         <div class="progress-header">
                             <span style="color: var(--accent); font-weight: 600; font-size: 0.85rem;"><i class="fas fa-hammer"></i> In Development</span>
-                            <span class="progress-text">75%</span>
+                            <span class="progress-text">20%</span>
                         </div>
                         <div class="progress-bar-bg">
-                            <div class="progress-bar-fill" style="width: 75%;"></div>
+                            <div class="progress-bar-fill" style="width: 20%;"></div>
                         </div>
                     </div>
                 </div>
@@ -115,7 +122,7 @@
                 </div>
             </div>
 
-            <div class="game-card">
+            <div class="game-card" id="cardDiveTheBrainrot">
                 <div class="card-image">
                     <img src="assets/arts/braINHOTE.png" alt="Dive The Brainrot" class="game-thumb">
                     <div class="card-overlay"></div>
@@ -127,10 +134,10 @@
                     <div class="progress-container">
                         <div class="progress-header">
                             <span style="color: var(--accent); font-weight: 600; font-size: 0.85rem;"><i class="fas fa-hammer"></i> In Development</span>
-                            <span class="progress-text">40%</span>
+                            <span class="progress-text">70%</span>
                         </div>
                         <div class="progress-bar-bg">
-                            <div class="progress-bar-fill" style="width: 40%;"></div>
+                            <div class="progress-bar-fill" style="width: 70%;"></div>
                         </div>
                     </div>
                 </div>
@@ -139,6 +146,32 @@
                 </div>
             </div>
 
+        </div>
+
+        <div class="previa-modal" id="modalAnimeCelestialX">
+            <div class="previa-content">
+                <span class="btn-fechar-previa">&times;</span>
+                <h2>Anime Celestial X</h2>
+                <p>O universo supremo dos animes em Roblox está aqui! No Celestial X, você encarna seu personagem favorito, explora mundos vastos e luta em combates que quebram limites. A verdadeira experiência Celestial espera por você.</p>
+            </div>
+        </div>
+
+        <div class="previa-modal" id="modalAnimeTravelers">
+            <div class="previa-content">
+                <span class="btn-fechar-previa">&times;</span>
+                <h2>Anime Travelers</h2>
+                <p>O RPG de anime mais ambicioso que estamos criando. Viaje entre as eras e os mundos dos animes mais icônicos, formando sua própria lenda. Uma jornada inesquecível está sendo forjada.</p>
+                <img src="assets/arts/adada.png" alt="Anime Travelers">
+            </div>
+        </div>
+
+        <div class="previa-modal" id="modalDiveTheBrainrot">
+            <div class="previa-content">
+                <span class="btn-fechar-previa">&times;</span>
+                <h2>Dive The Brainrot</h2>
+                <p>Cansado da realidade? Mergulhe de cabeça na loucura absoluta. Uma experiência frenética onde o caos e a insanidade são as regras. Prepare-se para que seu cérebro derreta.</p>
+                <img src="assets/arts/braINHOTE.png" alt="Dive The Brainrot">
+            </div>
         </div>
     </section>
 
@@ -150,7 +183,7 @@
         <div class="team-container">
             
             <div class="team-tier owners-tier">
-                <h3 class="tier-title">BOARD OF DIRECTORS</h3>
+                <h3 class="tier-title board-label">BOARD OF DIRECTORS</h3>
                 <div class="owners-grid">
                     <div class="team-member-card owner-card">
                         <div class="member-photo">
@@ -185,135 +218,6 @@
                             <p class="member-role">Owner</p>
                         </div>
                     </div>
-                </div>
-            </div>
-    
-            <div class="team-tier dev-tier" style="margin-top: 100px;">
-                <h3 class="tier-title">DEVELOPMENT TEAM</h3>
-                <div class="team-scroll-wrapper">
-                    
-                    <div class="team-member-card">
-                        <div class="member-photo">
-                            <div class="photo-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                                <img src="assets/owners and developers/bia.png" alt="Bia" onerror="this.style.display='none'">
-                            </div>
-                        </div>
-                        <div class="member-details">
-                            <h3 class="member-name">Bia</h3>
-                            <p class="member-role">Project Manager</p>
-                        </div>
-                    </div>
-                    <div class="team-member-card">
-                        <div class="member-photo">
-                            <div class="photo-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                                <img src="assets/owners and developers/salt.png" alt="Salt" onerror="this.style.display='none'">
-                            </div>
-                        </div>
-                        <div class="member-details">
-                            <h3 class="member-name">Salt</h3>
-                            <p class="member-role">Manager</p>
-                        </div>
-                    </div>
-                    <div class="team-member-card">
-                        <div class="member-photo">
-                            <div class="photo-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                                <img src="assets/owners and developers/tlipe.png" alt="O_Kolt" onerror="this.style.display='none'">
-                            </div>
-                        </div>
-                        <div class="member-details">
-                            <h3 class="member-name">O_Kolt</h3>
-                            <p class="member-role">Programmer</p>
-                        </div>
-                    </div>
-                    <div class="team-member-card">
-                        <div class="member-photo">
-                            <div class="photo-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                                <img src="assets/owners and developers/slowzy.png" alt="Slowzy" onerror="this.style.display='none'">
-                            </div>
-                        </div>
-                        <div class="member-details">
-                            <h3 class="member-name">Slowzy</h3>
-                            <p class="member-role">Animator</p>
-                        </div>
-                    </div>
-                    <div class="team-member-card">
-                        <div class="member-photo">
-                            <div class="photo-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                                <img src="assets/owners and developers/alebao.png" alt="Alebao" onerror="this.style.display='none'">
-                            </div>
-                        </div>
-                        <div class="member-details">
-                            <h3 class="member-name">Alebão</h3>
-                            <p class="member-role">VFX Maker</p>
-                        </div>
-                    </div>
-                    <div class="team-member-card">
-                        <div class="member-photo">
-                            <div class="photo-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                                <img src="assets/owners and developers/Portuga.png" alt="Portuga" onerror="this.style.display='none'">
-                            </div>
-                        </div>
-                        <div class="member-details">
-                            <h3 class="member-name">Portuga</h3>
-                            <p class="member-role">Builder/Modelator</p>
-                        </div>
-                    </div>
-                    <div class="team-member-card">
-                        <div class="member-photo">
-                            <div class="photo-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                                <img src="assets/owners and developers/Batata.png" alt="Batata" onerror="this.style.display='none'">
-                            </div>
-                        </div>
-                        <div class="member-details">
-                            <h3 class="member-name">Batata</h3>
-                            <p class="member-role">Modelator</p>
-                        </div>
-                    </div>
-                    <div class="team-member-card">
-                        <div class="member-photo">
-                            <div class="photo-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                                <img src="assets/owners and developers/Dutra.png" alt="Dutra" onerror="this.style.display='none'">
-                            </div>
-                        </div>
-                        <div class="member-details">
-                            <h3 class="member-name">Dutra</h3>
-                            <p class="member-role">Ui Maker </p>
-                        </div>
-                    </div>
-                    <div class="team-member-card">
-                        <div class="member-photo">
-                            <div class="photo-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                                <img src="assets/owners and developers/Ywal.png" alt="Ywalking" onerror="this.style.display='none'">
-                            </div>
-                        </div>
-                        <div class="member-details">
-                            <h3 class="member-name">Ywalking</h3>
-                            <p class="member-role">Design Artist</p>
-                        </div>
-                    </div>
-                    <div class="team-member-card">
-                        <div class="member-photo">
-                            <div class="photo-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                                <img src="assets/owners and developers/netao.png" alt="Netao" onerror="this.style.display='none'">
-                            </div>
-                        </div>
-                        <div class="member-details">
-                            <h3 class="member-name">Netao</h3>
-                            <p class="member-role">Tester</p>
-                        </div>
-                    </div>
-                    <div class="team-member-card">
-                        <div class="member-photo">
-                            <div class="photo-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                                <img src="assets/owners and developers/zen.png" alt="PontoZen" onerror="this.style.display='none'">
-                            </div>
-                        </div>
-                        <div class="member-details">
-                            <h3 class="member-name">PontoZen</h3>
-                            <p class="member-role">Modelator</p>
-                        </div>
-                    </div>
-
                 </div>
             </div>
 

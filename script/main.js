@@ -27,7 +27,7 @@ const apiURL = "/api/send";
     }
 
     async function fetchRobloxData() {
-        const cards = document.querySelectorAll('.game-card');
+        const cards = document.querySelectorAll('.game-card[data-universe-id]');
         const uids = Array.from(cards).map(c => c.dataset.universeId).filter(id => id);
         if (uids.length === 0) return;
 
@@ -108,6 +108,38 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
     if(statsSection) statsObserver.observe(statsSection);
+
+    const modaisConfigs = [
+        { cardId: 'cardAnimeCelestialX', modalId: 'modalAnimeCelestialX' },
+        { cardId: 'cardAnimeTravelers', modalId: 'modalAnimeTravelers' },
+        { cardId: 'cardDiveTheBrainrot', modalId: 'modalDiveTheBrainrot' }
+    ];
+
+    modaisConfigs.forEach(config => {
+        const card = document.getElementById(config.cardId);
+        const modal = document.getElementById(config.modalId);
+        
+        if (card && modal) {
+            card.addEventListener('click', (e) => {
+                if (e.target.tagName.toLowerCase() !== 'a') {
+                    modal.classList.add('show');
+                }
+            });
+
+            const closeBtn = modal.querySelector('.btn-fechar-previa');
+            if (closeBtn) {
+                closeBtn.addEventListener('click', () => {
+                    modal.classList.remove('show');
+                });
+            }
+
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.classList.remove('show');
+                }
+            });
+        }
+    });
 });
 
 const contactForm = document.getElementById('contactForm');
